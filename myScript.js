@@ -1,5 +1,5 @@
  function myFunction(){
 
-	document.getElementByID("demo22").innerHTML="This is my first JavaScript function.":
+	document.getElementByID("demo2").innerHTML="This is my first JavaScript function.":
 
 }
