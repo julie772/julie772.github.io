@@ -5,6 +5,15 @@
 <h1> Hello, Github! My name is Julie772!</h1> 
 <h2> Nov 29, 2016! </h2>
 
+<p id="demo3"> </p>
+document.getElementById("demo3").innerHTML =
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+</script>
+
 <p><Strong> Note:</Strong> This is my first JavaScript function, which is stored in an external file. Placing JavaScript in external files has some advantages: 1) it separates HTML and codes; 2) It make HTML and JavaScript easier to read and maintain; 3) Cached JavaScript files can speed up page loads. </p>
 
 <p id ="demo1"> JavaScript can change HTML content.</p>
@@ -16,13 +25,5 @@
 <script src="myScript.js"></script>
 
 
-<p id="demo3"> </p>
-document.getElementById("demo3").innerHTML =
-"The temperature is " + toCelsius(77) + " Celsius";
-
-function toCelsius(fahrenheit) {
-    return (5/9) * (fahrenheit-32);
-} 
-</script>
 </body>
 </html>
