@@ -10,4 +10,4 @@ function toCelsius(fahreheit){
     
 
 }
-document.getElementId("demo1").innerHTML = The Temperature is " + toCelsius(77) + " Celsius
+
