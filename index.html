@@ -9,8 +9,17 @@
 <script>
 var person ={firstName: "Julie", lastName:"Susan",age:30, eyeColor: "brown"}
 
-document.getElementById("demo").innerHTML =person.firstname + " "+ person.lastName + " is " +person.age + " years old.";
+document.getElementById("demo").innerHTML =person.firstName + " "+ person.lastName + " is " +person.age + " years old.";
 </script>
 
+<p> Click the button to display today's date </p>
+<button onClick="displayDate()"> The time is ? </button>
+
+<script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+
+}
+</script>
 </body>
 </html>
