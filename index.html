@@ -24,11 +24,12 @@ function displayDate(){
 </script>
 
 <p id = "demo3"></p>
-<p> slice() extracts a part of a string and returns the extracted part in a new string.</p>
+<p> slice() extracts a part of a string and returns the extracted part in a new string. If a paramenter is negative, the position is counted from the end of the string. </p>
 
 <script>
-var string = "Apple,Banana, Kiwi";
+var string = "Apple, Banana, Kiwi";
 document.getElementById("demo3").innerHTML=string.slice(7,13);
+document.getElementById("demon3").innerHTML=string.slice(-12);
 </script>
 </bodya
 </html>
