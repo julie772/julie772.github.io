@@ -3,38 +3,6 @@
 <body>
 <h1> Hello, Github! My name is Julie772!</h1> 
 <h2> Started on Nov 29, 2016! </h2>
-<div id="animation"> My animation will go here</div>
-
-<p id="demo"> </p>
-<script>
-var person ={firstName:"Julie",lastName:"Susan",age:30, eyeColor: "brown"}
-
-document.getElementById("demo").innerHTML =person.firstName + " "+ person.lastName + " is " +person.age + " years old.";
-</script>
-
-<p id="demo"></p>
-<p> What's the time now to display today's date </p>
-<button onClick="displayDate()"> The time is ? </button>
-
-<script>
-function displayDate(){
-	document.getElementById("demo").innerHTML=Date();
-
-}
-</script>
-
-<p id = "demo3"></p>
-<p> slice() extracts a part of a string and returns the extracted part in a new string. If a paramenter is negative, the position is counted from the end of the string. </p>
-
-<script>
-var string = "Apple, Banana, Kiwi";
-document.getElementById("demo3").innerHTML=string.slice(7,13);
-document.getElementById("demo3").innerHTML=string.slice(-12);
-</script>
-
-<p id= = "demo4"> </p>
-<p> substring() is similar to slice(). The difference is that it cannot accept negative indexes.  substr() is the second paramenter specifies the length of the extracted part.
-
 
 <p id="p1"> Hello, there! It's raining outside.</p>
 <p id="p2"> Hello, there! it's really heavy rain. </p>
@@ -47,6 +15,49 @@ document.getElementById("p2").styel.fontsize = "larger";
 
 </script>
 
-<p> The paragraph above was chagned by a script</p>
+<style>
+#container{
+ width:400px;
+ height:400px;
+ position:relative;
+ background:yellow;
+}
+#animate {
+ width: 50px;
+ height:65px;
+ position: absolute;
+ background: blue;
+}
+</style>
+
+<p> 
+<button onClick ="myMove()">Click Me </button>
+</p>
+<div id="container">
+<div id="animate"></div>
+</div>
+
+<script>
+function myMove(){
+var elem = document.getElementById("animate");
+var pos = 0;
+var id = setInterval(frame,5);
+
+function frame(){
+ 	if (pos == 350){
+		clearInterval(id);
+	}else {
+		pos++;
+		elem.style.top=pos + 'px';
+		elme.style.left = pos + 'px';
+	}
+
+
+}
+
+}
+</script>
 </body>
+
+
 </html>
