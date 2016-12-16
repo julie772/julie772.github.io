@@ -21,7 +21,7 @@
 <p id="p1">My animation move from here!:) </p>
 
 <script>
-document.getElementById("p1">.style.color = "blue";
+document.getElementById("p1").style.color = "blue";
 document.getElementById("p1").style.fontFamily = "Arial";
 document.getElementById("p1").style.fontsize ="larger";
 </script>
@@ -40,13 +40,11 @@ var pos = 0;
 var id = setInterval(frame,5);
 
 function frame(){
- 	if (pos <=200){
+ 	if (pos =350){
+		clearInterval(id);
+	}else{
 		pos++;
 		elem.style.top=pos + 'px';
-		elem.style.left = pos + 'px';
-	}else{
-		pos++
-		elem.style.top=pos + 'px';
-		elem.style.left=pos -'px';
+		elem.style.left=pos + 'px';
 
 
