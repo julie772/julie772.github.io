@@ -3,7 +3,7 @@
 
 <style>
 #container{
- width:500px;
+ width:400px;
  height:400px;
  position:relative;
  background:black;
@@ -40,18 +40,13 @@ var pos = 0;
 var id = setInterval(frame,5);
 
 function frame(){
- 	if (pos == 350){
-		clearInterval(id);
-	}else {
+ 	if (pos <=200){
 		pos++;
 		elem.style.top=pos + 'px';
 		elem.style.left = pos + 'px';
-	}
+	}else{
+		pos++
+		elem.style.top=pos - 'px';
+		elem.style.left=pos +'ps';
 
 
-}
-
-}
-</script>
-</body>
-</html>
