@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+//coment enter here
 <style>
 #container{
  width:400px;
  height:400px;
  position:relative;
- background: yellow;
+ background: black;
 }
 #animate {
  width: 50px;
@@ -51,5 +52,11 @@ function myMove(){
 }
 </script>
 
+<p id="demo"> Display person here</p>
+<script>
+  var person ={name:"John",age: 50};
+  document.getElementById("demo").innerHTML=person.name + "is" +person.age + " years old";
+
+</script>
 </body>
 </html>
