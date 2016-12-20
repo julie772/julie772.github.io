@@ -1,70 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-#container{
- width:400px;
- height:400px;
- position:relative;
- background: black;
-}
-#animate {
- width: 50px;
- height:50px;
- position: absolute;
- background-color: red;
-}
-</style>
-
+<head>
+	<title> YourDreams &amp; Co.</title>
+</head>
 <body>
-//<h1> Hello Javascript.</h1>
-
-<span onmouseover="this.style.color='red'">Hello JavaScript </span>
-<p id="p1">My animation move from here!:) </p>
-
-<script>
-document.getElementById("p1").style.color = "blue";
-document.getElementById("p1").style.fontFamily = "Arial";
-document.getElementById("p1").style.fontsize ="larger";
-</script>
-
-<p> 
-<button onClick ="myMove()">Click Me </button>
-</p>
-<div id="container">
-<div id="animate"></div>
-</div>
-
-<script>
-function myMove(){
-	var elem = document.getElementById("animate");
-	var pos = 0;
-	var id = setInterval(frame, 5);
-
-	function frame(){
- 		if (pos == 350){
-			clearInterval(id);
-		}else{
-			pos++;
-			elem.style.top = pos + 'px';
-			elem.style.left = pos + 'px';
-		}		
-	}	
-}
-</script>
-
-<p id="demo"> Display person here</p>
-<script>
-  var person ={name:"John",age: 50};
-  document.getElementById("demo").innerHTML=person.name + " is" +person.age + " years old.";
-</script>
-
-<p id = "demo2"> </p>
-<script>
-var x = 10;
-x -=5;
-document.getElementById("demo2").innerHTML=x;
-</script>
+	<h1> YourDreams &amp; Co.</h1>
+	<script src="js/yDreams.js"></script>
+	<p> Contact Us </p>
+		<em> 666-8888</em>
+	</p>
 
 </body>
-</html>
+</html> 
