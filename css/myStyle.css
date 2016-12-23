@@ -1,0 +1,15 @@
+body{
+                font-family:arial;
+                background-color: rgb(185,179,175);}        
+h1{
+                color:rgb(255,255,255);    
+p{      
+                color:red;
+                text-align: center;}
+
+.left {
+                text-align:left;
+                color:blue;
+
+        } /* this is class selector*/
+        </style>
