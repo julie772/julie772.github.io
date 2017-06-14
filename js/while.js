@@ -14,4 +14,5 @@ if (operator == 'addition'){
       i++;
       }
   }
-  
+   var el = document.getElementById('blackboard');
+   el.innerHTML = msg;
