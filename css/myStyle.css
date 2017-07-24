@@ -1,4 +1,9 @@
+
 body{
+    background-color:BlanchedAlmond
+}
+      
+/* body{
                 font-family:arial;
                 background-color: rgb(185,179,175);}        
 h1{
@@ -11,5 +16,5 @@ p{
                 text-align:left;
                 color:blue;
 
-        } /* this is class selector*/
+        } this is class selector*/
         </style>
