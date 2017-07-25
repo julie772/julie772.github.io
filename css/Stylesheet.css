@@ -16,6 +16,10 @@ ul li
   text-align:center;
   padding: 5px;
   border-bottom:3px 0 0 10px;
-  border-left:10px solid #cc3333;
+  border-left:3px solid #000000;
   background-color:#cccc99;
+}
+li a
+{
+  text-decoration:none"
 }
